@@ -1,0 +1,24 @@
+{
+    "shopping_cart_items": [
+        {
+            "name": "Item 1",
+            "count": 1,
+            "price": 339.99
+        },
+        {
+            "name": "Item 2",
+            "count": 1,
+            "price": 129.29
+        },
+        {
+            "name": "Item 3",
+            "count": 1,
+            "price": 669.99
+        },
+        {
+            "name": "Item 4",
+            "count": 1,
+            "price": 999.99
+        }
+    ]
+}

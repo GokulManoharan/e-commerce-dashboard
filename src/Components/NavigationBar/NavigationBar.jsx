@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Icon } from "@iconify/react";
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import calendarIcon from '@iconify-icons/feather/calendar';
 import mailIcon from '@iconify-icons/feather/mail';
 import messageSquareIcon from '@iconify-icons/feather/message-square';
@@ -11,9 +11,12 @@ import shoppingCartIcon from '@iconify-icons/feather/shopping-cart';
 import bellIcon from '@iconify-icons/feather/bell';
 import menuIcon from '@iconify-icons/feather/menu';
 
+import CartIcon from './CartIcon';
+
 import './NavigationBar.css';
 
 const NavigationBar = props => {
+
 
     return (
         <Row className="navigation-row">
@@ -31,7 +34,7 @@ const NavigationBar = props => {
                     </div>
                     <div className="app-navbar-right-icons">
                         <Icon icon={searchIcon} className="nav-icons nav-icon" />
-                        <Icon icon={shoppingCartIcon} className="nav-icons nav-icon" />
+                        <CartIcon />
                         <Icon icon={bellIcon} className="nav-icons nav-icon" />
                         <div className="username-div d-none d-md-block">
                             <span className="username-label">Username</span>

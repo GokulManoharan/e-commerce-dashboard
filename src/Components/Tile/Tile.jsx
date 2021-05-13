@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './SmallCard.css'
+import './Tile.css'
 
-const SmallCard = props => {
+const Tile = props => {
 
     return (
         <div className="small-card" style={{
@@ -13,4 +13,4 @@ const SmallCard = props => {
     )
 }
 
-export default SmallCard
+export default Tile

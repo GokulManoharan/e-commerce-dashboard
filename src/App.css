@@ -4,7 +4,7 @@
   height: 100%;
   width: 100%;
   letter-spacing: 1px;
-  font-family: revert;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .content{
@@ -23,16 +23,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #d0d2d6;
   font-size: 24px;
 }
 
 .small-card-content{
-  color: #fff;
+  color: #d0d2d6;
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   height: 100%;
 }
 
@@ -59,6 +58,10 @@
 
 .product-content-row{
   height: 100%;
+}
+
+.updated-text{
+  font-size: 14px !important;
 }
 
 /* /* @media screen and (max-width: 768px) {
