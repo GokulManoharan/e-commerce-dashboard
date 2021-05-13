@@ -13,10 +13,6 @@
     color: #b2c0c3;
    }
 
-   .dash-select-menu-wrapper:hover{
-     background: #161d31;
-   }
-
    .dash-select-menu-wrapper{
      color: #b2c0c3;
      width: 100%;
@@ -24,10 +20,30 @@
      display: flex;
      justify-content: space-between;
      padding: 15px;
-     background: #161d31;
-     /* margin-top: 20px; */
-     /* padding-top: 20px; */
    }
+
+   .dash-select-menu-wrapper div{
+    background: #161d31;
+    width: 100%;
+    padding: 5px 10px;
+    }
+
+    .dash-select-menu-wrapper div:first-child{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .dash-select-menu-wrapper div:last-child{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+
+    .badge-wrapper{
+      display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
 
    .dash-number{
      color: #ff9f43;
@@ -35,6 +51,8 @@
      border-radius: 50%;
      height: 25px;
      width: 25px;
+     margin-right: 6px;
+     padding-top: 6px;
    }
    
    .dash-name-wrapper{
@@ -52,17 +70,27 @@
 
   .category{
     color: #b2c0c3;
-    padding-left:  1rem;
+    padding-left: 2rem;
   }
 
   .category ul{
     padding: 0;
+    margin-top: 1rem;
   }
 
   .category li{
     list-style: none;
     margin: 5px -10px;
     padding: 10px 10px;
+  }
+
+  .category-li-with-chevron-right{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .category-li-with-chevron-right span{
+    margin-left: -2.75rem !important;
   }
 
   .category li span{
@@ -80,7 +108,7 @@
   }
 
   .category-title-span{
-    color:#6a6a6a;
+    color:#6a6a6a !important;
   }
 
   .category-1{
@@ -101,7 +129,7 @@
     padding-left: 10px !important;
   }
 
-  .cards-span-wrapper span:last-child{
+  .new-badge{
     color: #28c76f;
     border: 1px solid rgba(40,199,111,.12);;
     background-color: rgba(40,199,111,.12);

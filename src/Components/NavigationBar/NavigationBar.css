@@ -64,10 +64,11 @@
 .cart-icon-count {
     border-radius: 50%;
     font-size: 16px;
+    font-weight: 600;
     background: #7367f0;
     color: #fff;
-    padding: 1px 7px 0px 3px;
-    vertical-align: text-top;
+    padding: 1px 5px 1px 0px;
+    vertical-align: super;
     margin-left: -10px;
 }
 

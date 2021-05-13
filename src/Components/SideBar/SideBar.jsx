@@ -1,5 +1,4 @@
 import React from 'react';
-import { Form } from 'react-bootstrap';
 import { Icon } from "@iconify/react";
 import homeIcon from '@iconify-icons/feather/home';
 import mailIcon from '@iconify-icons/feather/mail';
@@ -10,6 +9,8 @@ import shoppingCartIcon from '@iconify-icons/feather/shopping-cart';
 import typeIcon from '@iconify-icons/feather/type';
 import eyeIcon from '@iconify-icons/feather/eye';
 import creditCardIcon from '@iconify-icons/feather/credit-card';
+import chevronDownIcon from '@iconify-icons/feather/chevron-down';
+import chevronRightIcon from '@iconify-icons/feather/chevron-right';
 
 import './SideBar.css'
 
@@ -18,11 +19,16 @@ const SideBar = props => {
     return (
         <div className="side-bar visible-lg-block hidden-lg">
             <div className="dash-select-menu-wrapper">
-                <div className="dash-name-wrapper">
-                    <Icon icon={homeIcon} className="nav-icons nav-icon" />
-                    <span>Home</span>
+                <div>
+                    <div className="dash-name-wrapper">
+                        <Icon icon={homeIcon} className="nav-icons nav-icon" />
+                        <span>Home</span>
+                    </div>
                 </div>
-                <span className="badge dash-number">2</span>
+                <div className="badge-wrapper">
+                    <span className="badge dash-number">2</span>
+                    <Icon icon={chevronDownIcon} className="category-title-span" />
+                </div>
             </div>
             <div className="category-1 category">
                 <span className="category-title-span">CATEGORY 1</span>
@@ -31,7 +37,10 @@ const SideBar = props => {
                     <li><Icon icon={messageSquareIcon} className="nav-icons nav-icon" /> <span>Chat</span></li>
                     <li><Icon icon={checkSquareIcon} className="nav-icons nav-icon" /> <span>Todo</span></li>
                     <li><Icon icon={calendarIcon} className="nav-icons nav-icon" /> <span>Calendar</span></li>
-                    <li><Icon icon={shoppingCartIcon} className="nav-icons nav-icon" /> <span>eCommerce</span></li>
+                    <li className='category-li-with-chevron-right'><Icon icon={shoppingCartIcon} className="nav-icons nav-icon" />
+                        <span>eCommerce</span>
+                        <Icon icon={chevronRightIcon} className="category-title-span" />
+                    </li>
                 </ul>
             </div>
             <div className="category category-2">
@@ -43,7 +52,8 @@ const SideBar = props => {
                         <Icon icon={creditCardIcon} className="nav-icons nav-icon" />
                         <div className="cards-span-wrapper">
                             <span>Cards</span>
-                            <span className="badge">new</span>
+                            <span className="badge new-badge">new</span>
+                            <Icon icon={chevronRightIcon} className="category-title-span" />
                         </div>
                     </li>
                 </ul>
