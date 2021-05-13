@@ -17,6 +17,8 @@
 
 .prod-image span{
     margin-top: -4px !important;
+    font-size: 14px !important;
+    margin-left: 3px;
 }
 
 .product-col{

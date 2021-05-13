@@ -63,22 +63,16 @@
 
 .cart-icon-count {
     border-radius: 50%;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     background: #7367f0;
     color: #fff;
-    padding: 1px 5px 1px 0px;
+    padding: 0px 5px 0 6px;
     vertical-align: super;
-    margin-left: -10px;
+    margin-left: -6px;
+    margin-bottom: 0;
+    position: absolute;
 }
-
-/* .badge {
-  padding-left: 9px;
-  padding-right: 9px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
-} */
 
 @media screen and (max-width: 1024px) {
     .app-navbar-right-icons{

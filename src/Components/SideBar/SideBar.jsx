@@ -37,7 +37,7 @@ const SideBar = props => {
                     <li><Icon icon={messageSquareIcon} className="nav-icons nav-icon" /> <span>Chat</span></li>
                     <li><Icon icon={checkSquareIcon} className="nav-icons nav-icon" /> <span>Todo</span></li>
                     <li><Icon icon={calendarIcon} className="nav-icons nav-icon" /> <span>Calendar</span></li>
-                    <li className='.category-li-with-chevron-right'><Icon icon={shoppingCartIcon} className="nav-icons nav-icon" />
+                    <li className='category-li-with-chevron-right'><Icon icon={shoppingCartIcon} className="nav-icons nav-icon" />
                         <div>
                             <span>eCommerce</span>
                             <Icon icon={chevronRightIcon} className="category-title-span" />

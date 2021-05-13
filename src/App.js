@@ -108,7 +108,7 @@ const App = _ => {
             <Col md={(isTablet && !isMobile) ? 12 : 8} sm={12}>
               <Tile height={(isMobile || isTablet) ? "10rem" : "22rem"}>
                 <div className="center-text-tile">
-                  <span>I'm text centered</span>
+                  <span>I am  text centered</span>
                 </div>
               </Tile>
             </Col>
