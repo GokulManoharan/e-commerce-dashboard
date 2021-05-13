@@ -86,11 +86,13 @@
 
   .category-li-with-chevron-right{
     display: flex;
-    justify-content: space-between;
   }
 
-  .category-li-with-chevron-right span{
-    margin-left: -2.75rem !important;
+  .category-li-with-chevron-right div{
+    margin-left: 8px !important;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .category li span{
@@ -129,13 +131,17 @@
     padding-left: 10px !important;
   }
 
+  /* .new-badge-wrapper{
+    display: flex;
+  } */
+
   .new-badge{
     color: #28c76f;
     border: 1px solid rgba(40,199,111,.12);;
     background-color: rgba(40,199,111,.12);
     border-radius: 25px;
-    font-size: 14px;
-    margin-right: 2rem;
+    font-size: 12px !important;
+    margin-right: -3rem;
   }
 
   @media screen and (max-width: 768px) {
