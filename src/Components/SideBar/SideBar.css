@@ -20,6 +20,7 @@
      display: flex;
      justify-content: space-between;
      padding: 15px;
+     cursor: pointer;
    }
 
    .dash-select-menu-wrapper div{
@@ -130,10 +131,6 @@
   .cards-span-wrapper span:first-child{
     padding-left: 10px !important;
   }
-
-  /* .new-badge-wrapper{
-    display: flex;
-  } */
 
   .new-badge{
     color: #28c76f;

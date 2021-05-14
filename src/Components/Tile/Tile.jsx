@@ -2,15 +2,12 @@ import React from 'react';
 
 import './Tile.css'
 
-const Tile = props => {
-
-    return (
-        <div className="small-card" style={{
-            height: props.height
-        }}>
-            {props.children}
-        </div>
-    )
-}
+const Tile = ({ height, children }) => (
+    <div className="tile" style={{
+        height
+    }}>
+        {children}
+    </div>
+)
 
 export default Tile

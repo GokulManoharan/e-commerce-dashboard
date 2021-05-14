@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React from 'react';
 import { Icon } from "@iconify/react";
 import { Row } from 'react-bootstrap';
 import calendarIcon from '@iconify-icons/feather/calendar';
@@ -7,7 +7,6 @@ import messageSquareIcon from '@iconify-icons/feather/message-square';
 import starIcon from '@iconify-icons/feather/star';
 import checkSquareIcon from '@iconify-icons/feather/check-square';
 import searchIcon from '@iconify-icons/feather/search';
-import shoppingCartIcon from '@iconify-icons/feather/shopping-cart';
 import bellIcon from '@iconify-icons/feather/bell';
 import menuIcon from '@iconify-icons/feather/menu';
 
@@ -15,8 +14,7 @@ import CartIcon from './CartIcon';
 
 import './NavigationBar.css';
 
-const NavigationBar = props => {
-
+const NavigationBar = () => {
 
     return (
         <Row className="navigation-row">
@@ -38,13 +36,12 @@ const NavigationBar = props => {
                         <Icon icon={bellIcon} className="nav-icons nav-icon" />
                         <div className="username-div d-none d-md-block">
                             <span className="username-label">Username</span>
-                            <p>admin</p>
+                            <p className="user-role">admin</p>
                         </div>
                     </div>
                 </div>
             </div>
         </Row>
-
     )
 }
 
